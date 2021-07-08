@@ -1,0 +1,88 @@
+doctype html
+// コメント
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    link(href="./css/style.css", rel="stylesheet")
+    title テンプレート
+  body
+    div.top.d-block
+      img.position-relative.d-block(
+        src="./img/top.jpg",
+        alt="トップの画像")
+      div.position-absolute.move.w-75.text-center
+        div.boundletter1 T
+        div.boundletter1 M
+        div.boundletter1 P
+        div.boundletter1 L
+        div.boundletter1 A
+        div.boundletter1 T
+        div.boundletter1 E
+
+    div.main-container
+      div.head-nav.p-5
+        div.row
+          div.text-start.col.ms-md-5.d-none.d-md-block.m-auto
+            img.head-img(src="https://picsum.photos/150/50", alt="icon")
+          div.col.m-auto.row.text-center
+            a.head-btn.col-4(href="#content-1") content1 
+            a.head-btn.col-4(href="#content-2") content2
+            a.head-btn.col-4(href="#content-3") form 
+      div#content-1.m-5.p-5
+        div.sub-title.text-center
+          h2.m-3.border サブタイトル1
+        div.detail.text-center.break
+          p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+          p.m-0 faaaaaaaaaaaaaaafjkljfdaslfaaaaaaaaaaaaaaafjkljfdasl
+          p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+          p.m-0 faaaaaaaaaaaaaaafjkljfdaslfaaaaaaafjkljfdasl
+          p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+          p.m-0 faaaaaaaaaaaaaaafjkljaafjkljfdasl
+      div#content-2.container.my-5.py-5
+        div.sub-title.text-center
+          h2.m-3.border サブタイトル2
+        div.detail.row.m-3.break
+          div.col-md-4.col-12.text-center
+            h2.m-3 カードタイトルはみ出すとき
+            div.detail
+              img.m-3(src="https://picsum.photos/150/150", alt="icon")
+              p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+              p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+              p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+              p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+              p.m-0 faaaaaaaaaaaaaaafjkljfdaslfadsfsfdsaffds
+              p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+          div.col-md-4.col-12.text-center
+            h2.m-3 カードタイトル
+            div.detail
+              img.m-3(src="https://picsum.photos/150/152", alt="icon")
+              p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+              p.m-0 faaaaaaasafdafaasdfaaaaaaaaafjkljfdasl
+              p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+              p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+              p.m-0 faaaaaaaaafadsafdasfadaaaaaafjkljfdasl
+              p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+          div.col-md-4.col-12.text-center
+            h2.m-3 カードタイトル
+            div.detail
+              img.m-3(src="https://picsum.photos/150/151", alt="icon")
+              p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+              p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+              p.m-0 faaaaaaaaaasfaskdjf;ajaaaaafjkljfdasl
+              p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+              p.m-0 faaaaaaaaaafdsafadsfdasfaaaaaafjkljfdasl
+              p.m-0 faaaaaaaaaaaaaaafjkljfdasl
+      div#content-3.m-5.text-center.p-5
+        h2.m-3.border フォーム
+        div.row
+          div.col-md-6.col-12.text-md-end.my-3
+            input(type="text",placeholder="e-mail",style={width: "210px"})
+          div.col-md-6.col-12.text-md-start.my-3
+            input(type="text",placeholder="Name",style={width: "210px"})
+          div.col-12
+            textarea.d-none.d-md-block.m-auto(cols="60",rows="10",placeholder="Contents")
+            textarea.d-block.d-md-none.m-auto(cols="30",rows="10",placeholder="Contents")
+        button.m-3 POST
+    
+    
+    script(src="./js/main.js") 
