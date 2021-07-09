@@ -1,17 +1,12 @@
 console.log("stet");
-var Student = /** @class */ (function () {
-    function Student(firstName, middleInitial, lastName) {
-        this.firstName = firstName;
-        this.middleInitial = middleInitial;
-        this.lastName = lastName;
-        this.fullName = firstName + " " + middleInitial + " " + lastName;
-    }
-    return Student;
-}());
-function greeter(person) {
-    return "Hello, " + person.firstName + " " + person.lastName;
+function postM() {
+    // const form = document.createElement("form")
+    var forms = document.forms["form-area"];
+    var email = forms.elements["email"].value;
+    var name = forms.elements["name"].value;
+    var contents = forms.elements["area-small"].value === "" ? forms.elements["area-big"].value : forms.elements["area-small"].value;
+    console.log(email, contents, name);
+    alert("POST機能はまだ実装してないよ！");
 }
-var user = new Student("Jane", "M.", "User");
-console.log(greeter(user));
 
 //# sourceMappingURL=main.js.map

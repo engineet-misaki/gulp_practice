@@ -5,6 +5,7 @@ html(lang="ja")
     meta(charset="utf-8")
     link(href="./css/style.css", rel="stylesheet")
     title テンプレート
+    
   body
     div.top.d-block
       img.position-relative.d-block(
@@ -74,15 +75,16 @@ html(lang="ja")
               p.m-0 faaaaaaaaaaaaaaafjkljfdasl
       div#content-3.m-5.text-center.p-5
         h2.m-3.border フォーム
-        div.row
-          div.col-md-6.col-12.text-md-end.my-3
-            input(type="text",placeholder="e-mail",style={width: "210px"})
-          div.col-md-6.col-12.text-md-start.my-3
-            input(type="text",placeholder="Name",style={width: "210px"})
-          div.col-12
-            textarea.d-none.d-md-block.m-auto(cols="60",rows="10",placeholder="Contents")
-            textarea.d-block.d-md-none.m-auto(cols="30",rows="10",placeholder="Contents")
-        button.m-3 POST
+        form(action="#",name="form-area",method="post") 
+          div.row
+            div.col-md-6.col-12.text-md-end.my-3
+              input#e-mail(type="text",placeholder="e-mail",name="email",style={width: "210px"},value="test")
+            div.col-md-6.col-12.text-md-start.my-3
+              input#name(type="text",placeholder="Name",name="name",style={width: "210px"})
+            div.col-12
+              textarea#text-area1.d-none.d-md-block.m-auto(cols="60",rows="10",placeholder="Contents",name="area-big")
+              textarea#text-area2.d-block.d-md-none.m-auto(cols="30",rows="10",placeholder="Contents",name="area-small")
+          input#post-button.m-3(type="button",value="POST",onclick="postM()")
     
     
     script(src="./js/main.js") 
